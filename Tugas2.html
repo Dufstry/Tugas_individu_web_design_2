@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Feedback</title>
+    <link rel="stylesheet" href="Tugas2.css">
+    <script src="https://kit.fontawesome.com/4b8eabd11b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>No. HP</label>
+        <input type="tel" placeholder="+62 " id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Alamat Email</label>
+        <input type="email" placeholder="Masukkan alamat Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Masukan</label>
+        <textarea rows="5" placeholder="Masukkan pesan yang ingin disampaikan" id="contact-message" onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
+   
+  </form>
+  
+  </div>
+    <script src="Tugas2.js"></script>
+</body>
+</html>
