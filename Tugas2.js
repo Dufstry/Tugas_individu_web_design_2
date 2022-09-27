@@ -56,10 +56,10 @@ function validateEmail(){
 function validateMessage(){
     var message = document.getElementById('contact-message').value;
     var Required = 30;
-    var left = required - message.length;
+    var left = Required - message.length;
 
     if(left>0){
-        errorMessage.innerHTML = left + 'karakter lagi';
+        errorMessage.innerHTML = left + ' karakter lagi';
         return false;
     }
     errorMessage.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
